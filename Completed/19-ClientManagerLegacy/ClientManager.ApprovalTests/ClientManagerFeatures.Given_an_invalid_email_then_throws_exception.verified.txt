@@ -1,0 +1,9 @@
+﻿{
+  Type: Exception,
+  Message: Invalid email.,
+  StackTrace:
+at ClientManager.ClntMngr.ValidateClient(String name, String email)
+at ClientManager.ClntMngr.AddClient(String name, String email, IClientsRegistry clientsRegistry)
+at ClientManager.ClntMngr.AddClnt(String name, String email, String filePath)
+at ClientManager.ApprovalTests.ClientManagerFeatures.<Given_an_invalid_email_then_throws_exception>b__4_0()
+}

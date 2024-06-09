@@ -1,0 +1,9 @@
+﻿{
+  Type: Exception,
+  Message: Client already exists.,
+  StackTrace:
+at ClientManager.ClientsFile.ValidateClientDoesNotExist(String name, String email)
+at ClientManager.ClntMngr.AddClient(String name, String email, IClientsRegistry clientsRegistry)
+at ClientManager.ClntMngr.AddClnt(String name, String email, String filePath)
+at ClientManager.ApprovalTests.ClientManagerFeatures.<Given_a_duplicated_client_Then_throws_exception>b__3_0()
+}
