@@ -142,6 +142,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19-ClientManagerLegacy", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManager", "Exercises\19-ClientManagerLegacy\ClientManager\ClientManager.csproj", "{E98AF779-EE1E-4668-92C6-8FD79BD769A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Tests", "Exercises\02-FizzBuzz\FizzBuzz.Tests\FizzBuzz.Tests.csproj", "{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -182,6 +184,7 @@ Global
 		{B292E11E-6DB1-4A41-8485-AAE4DB3C7F05} = {9903BB9C-688D-4D9A-8CFD-E567CF0275D9}
 		{43427880-AAB1-4420-8A45-E7ED58EC0592} = {9903BB9C-688D-4D9A-8CFD-E567CF0275D9}
 		{E98AF779-EE1E-4668-92C6-8FD79BD769A4} = {9EA1FA0B-FBD0-4CE7-9300-B13547A41117}
+		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E} = {B1D22D55-1DC1-4CF5-9B6F-70A9A6D138B1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EA3B1697-09D0-4FA2-B170-9304EA57B9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -304,5 +307,9 @@ Global
 		{E98AF779-EE1E-4668-92C6-8FD79BD769A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98AF779-EE1E-4668-92C6-8FD79BD769A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E98AF779-EE1E-4668-92C6-8FD79BD769A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
