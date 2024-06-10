@@ -17,7 +17,7 @@ public class SquareAreaTests
     }
 }
 
-public class SquareAreaClass
+public static class SquareAreaClass
 {
     public static int Calculate(int side)
     {

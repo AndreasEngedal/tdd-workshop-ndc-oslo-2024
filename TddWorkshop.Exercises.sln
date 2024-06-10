@@ -144,6 +144,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManager", "Exercises\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Tests", "Exercises\02-FizzBuzz\FizzBuzz.Tests\FizzBuzz.Tests.csproj", "{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorTests", "Exercises\13-StringCalculator\StringCalculatorTests\StringCalculatorTests.csproj", "{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRiskEvaluatorTests", "Exercises\08-ClientRiskEvaluator\ClientRiskEvaluatorTests\ClientRiskEvaluatorTests.csproj", "{B3C02743-F072-4B24-8B0B-D8D92D5611F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRiskEvaluator", "Exercises\08-ClientRiskEvaluator\ClientRiskEvaluator\ClientRiskEvaluator.csproj", "{DF1453ED-BA1E-448A-8CEB-CEC2895BA141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +191,9 @@ Global
 		{43427880-AAB1-4420-8A45-E7ED58EC0592} = {9903BB9C-688D-4D9A-8CFD-E567CF0275D9}
 		{E98AF779-EE1E-4668-92C6-8FD79BD769A4} = {9EA1FA0B-FBD0-4CE7-9300-B13547A41117}
 		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E} = {B1D22D55-1DC1-4CF5-9B6F-70A9A6D138B1}
+		{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6} = {8816300F-A7C1-4CD2-AE4C-513280233352}
+		{B3C02743-F072-4B24-8B0B-D8D92D5611F6} = {AD91D28F-B723-4B64-B8DE-37A3C6C7EEBE}
+		{DF1453ED-BA1E-448A-8CEB-CEC2895BA141} = {AD91D28F-B723-4B64-B8DE-37A3C6C7EEBE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EA3B1697-09D0-4FA2-B170-9304EA57B9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -311,5 +320,17 @@ Global
 		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7D2F8F-D0D0-4C9C-95BB-44F0EA7CB51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C906DF-0061-484C-B0D5-2E03DCAD4EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C02743-F072-4B24-8B0B-D8D92D5611F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C02743-F072-4B24-8B0B-D8D92D5611F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C02743-F072-4B24-8B0B-D8D92D5611F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C02743-F072-4B24-8B0B-D8D92D5611F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1453ED-BA1E-448A-8CEB-CEC2895BA141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1453ED-BA1E-448A-8CEB-CEC2895BA141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1453ED-BA1E-448A-8CEB-CEC2895BA141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1453ED-BA1E-448A-8CEB-CEC2895BA141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
