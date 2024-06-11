@@ -2,16 +2,9 @@
 
 public class ClientRiskEvaluatorClass
 {
-    private readonly AgeRiskEvaluator _ageRiskEvaluator;
-    private readonly OccupationRiskEvaluator _occupationRiskEvaluator;
-    private readonly DebtIncomeRatioRiskEvaluator _debtIncomeRatioRiskEvaluator;
-
-    public ClientRiskEvaluatorClass()
-    {
-        _ageRiskEvaluator = new();
-        _occupationRiskEvaluator = new();
-        _debtIncomeRatioRiskEvaluator = new();
-    }
+    private readonly AgeRiskEvaluator _ageRiskEvaluator = new();
+    private readonly OccupationRiskEvaluator _occupationRiskEvaluator = new();
+    private readonly DebtIncomeRatioRiskEvaluator _debtIncomeRatioRiskEvaluator = new();
 
     public int Evaluate(Client client)
     {

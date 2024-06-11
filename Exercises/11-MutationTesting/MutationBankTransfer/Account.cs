@@ -27,9 +27,4 @@ public class Account
     {
         _balance += amount;
     }
-    
-    public override string ToString()
-    {
-        return $"Account {Number} with balance {Balance}";
-    }
 }

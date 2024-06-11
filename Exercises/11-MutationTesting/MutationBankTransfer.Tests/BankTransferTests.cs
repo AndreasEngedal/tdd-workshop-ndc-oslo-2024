@@ -1,24 +1,28 @@
-using MutationBankTransfer;
+using FluentAssertions;
 
 namespace MutationBankTransfer.Tests
 {
-#if false
 
     public class BankTransferTests
     {
         private readonly BankService _bankService = new();
 
-        [Fact]
-        public void Should_transfer_money_between_two_accounts_and_update_balances()
+        [Theory]
+        [InlineData(10, 5, 5, 15)]
+        [InlineData(10, 10, 0, 20)]
+        public void Should_transfer_money_between_two_accounts_and_update_balances(
+            decimal openingBalance,
+            decimal amount,
+            decimal expectedSourceBalance,
+            decimal expectedDestinationBalance)
         {
-            const decimal openingBalance = 10;
             var source = new Account("ACC_01", openingBalance);
             var destination = new Account("ACC_02", openingBalance);
 
-            _bankService.Transfer(source, destination, 5);
+            _bankService.Transfer(source, destination, amount);
 
-            Assert.Equal(5, source.Balance);
-            Assert.Equal(15, destination.Balance);
+            Assert.Equal(expectedSourceBalance, source.Balance);
+            Assert.Equal(expectedDestinationBalance, destination.Balance);
         }
 
         [Fact]
@@ -29,8 +33,9 @@ namespace MutationBankTransfer.Tests
             var source = new Account("ACC_01", openingBalanceSourceAccount);
             var destination = new Account("ACC_02", 10);
 
-            Assert.Throws<InsufficientFundsException>(() => _bankService.Transfer(source, destination, amountToMove));
+            var action = () => _bankService.Transfer(source, destination, amountToMove);
+
+            action.Should().Throw<InsufficientFundsException>().WithMessage("Insufficient funds for transfer");
         }
     }
-#endif
 }

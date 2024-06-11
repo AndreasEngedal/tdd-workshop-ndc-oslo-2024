@@ -8,7 +8,13 @@ public class Client
     public decimal MonthlyIncome { get; init; }
     
     public decimal DebtToIncomeRatio()
-        => TotalMonthlyDebtPayments / MonthlyIncome;
+    {
+        if (MonthlyIncome == 0)
+            return 1;
+
+        return TotalMonthlyDebtPayments / MonthlyIncome;
+    }
+
     public bool IsMinor()
         => Age < 18;
 }

@@ -8,6 +8,7 @@ public class ClientRiskEvaluatorTests
 {
     [Theory]
     [InlineData(30, Occupation.Employed, 100, 1000, 0)]
+    [InlineData(18, Occupation.Employed, 400, 1000, 0)]
     [InlineData(15, Occupation.Employed, 100, 1000, 20)]
     [InlineData(30, Occupation.Unemployed, 100, 1000, 10)]
     [InlineData(30, Occupation.Employed, 410, 1000, 25)]

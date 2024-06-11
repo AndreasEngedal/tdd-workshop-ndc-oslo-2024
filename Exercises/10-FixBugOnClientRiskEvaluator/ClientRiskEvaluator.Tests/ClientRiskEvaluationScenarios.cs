@@ -1,7 +1,6 @@
 using FluentAssertions;
 
 namespace ClientRiskEvaluator.Tests;
-#if false
 public class ClientRiskEvaluationScenarios
 {
     private readonly ClientRiskEvaluator _evaluator = new();
@@ -105,5 +104,18 @@ public class ClientRiskEvaluationScenarios
 
         act.Should().Throw<ArgumentException>().WithMessage("Total monthly debt payments must be greater than zero");
     }
+
+    [Fact]
+    public void When_client_is_unemployed_with_debt_and_without_income_then_risk_score_is_just_the_high_risk_score()
+    {
+        var client = new ClientBuilder()
+            .WithEmploymentStatus(EmploymentStatus.Unemployed)
+            .WithMonthlyIncome(0)
+            .WithTotalMonthlyDebtPayments(400)
+            .Build();
+
+        var riskScore = _evaluator.CalculateRiskScore(client);
+
+        riskScore.Should().Be(25);
+    }
 }
-#endif
